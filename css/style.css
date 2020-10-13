@@ -1,0 +1,117 @@
+.body {
+    background-color: #e8e8e8;
+}
+.lists-container {
+    padding: 15px;
+}
+
+.lists-container > .task-container {
+    width: 50%;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.lists-container .task-container:first-child  {
+    margin-right: 30px;
+}
+
+.list-wrapper ul {
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+
+.task-container {
+    position: relative;
+    text-align: center;
+}
+
+.input-block {
+    margin-right: 15px;
+    position: relative;
+}
+
+.error-message {
+    position: absolute;
+    color: red;
+    text-align: left;
+    left: 0;
+}
+
+.hidden {
+    opacity: 0;;
+}
+
+.form-check {
+    padding: 20px 0;
+    border-bottom: 1px solid #adadad;
+}
+
+.form-check-label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-check-label .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border: 1px solid #adadad;
+}
+.form-check-label .checkbox:checked ~ .checkmark:after {
+    display: block;
+}
+
+.form-check-label .checkmark:after {
+    left: 5px;
+    top: -2px;
+    width: 10px;
+    height: 15px;
+    border: solid #589bda;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.todo-list :last-child .form-check {
+    border-bottom: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.not-done {
+    margin: 0;
+    padding: 15px 0;
+    background-color: #c0fac0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
